@@ -4,6 +4,7 @@ import {
   Box,
   Button,
   FormControl,
+  Grid,
   InputLabel,
   MenuItem,
   Select,
@@ -74,23 +75,23 @@ const PictionaryGenerator = () => {
         New Word
       </Button>
 
-      <Box
+      <Grid
+        alignItems="center"
+        justify="center"
         sx={{
           borderRadius: "10em",
-          p: "5em 20em",
           backgroundColor: "primary.light",
+          width: "50em",
+          height: "20em",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
         }}
       >
-        <Typography
-          component="h2"
-          variant="h3"
-          align="center"
-          color="black"
-          sx={{display: 'inline-block'}}
-        >
+        <Typography component="h1" variant="h2" align="center" color="black">
           {currentWord}
         </Typography>
-      </Box>
+      </Grid>
     </>
   );
 };
