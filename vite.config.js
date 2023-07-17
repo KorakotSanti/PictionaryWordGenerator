@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react';
 import svgrPlugin from 'vite-plugin-svgr';
 
 export default defineConfig({
+  base:'/PictionaryWordGenerator/',
   plugins: [
     react(),
     svgrPlugin(),
@@ -15,6 +16,6 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: 'build',
+    outDir: 'dist',
   }
 });
